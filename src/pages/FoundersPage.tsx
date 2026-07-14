@@ -1,4 +1,5 @@
-
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 
 const founders = [
   {
@@ -18,7 +19,14 @@ const founders = [
 ];
 
 const FoundersPage = () => {
+  
   return (
+    <>
+      <SEO
+        title="Healthcare - Madalasa Foundation"
+        description="We partner with Madalasa Hospital in Gurugram to provide free healthcare and medical camps for those who cannot afford treatment."
+        url="/founders"
+      />
     <section className="bg-gray-100 min-h-screen">
 
       {/* TOP HEADER BAR */}
@@ -74,6 +82,7 @@ const FoundersPage = () => {
       </div>
 
     </section>
+    </>
   );
 };
 

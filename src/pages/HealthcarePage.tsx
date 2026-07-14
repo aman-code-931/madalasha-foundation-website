@@ -1,5 +1,17 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
+
 const HealthcarePage: React.FC = () => {
+  
+  // useDocumentTitle("Healthcare - Madalasa Foundation");
   return (
+    <>
+      <SEO
+        title="Healthcare - Madalasa Foundation"
+        description="We partner with Madalasa Hospital in Gurugram to provide free healthcare and medical camps for those who cannot afford treatment."
+        url="/healthcare"
+      />
+
     <section className="bg-[#f8f9fb] py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
@@ -109,6 +121,7 @@ const HealthcarePage: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

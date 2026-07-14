@@ -1,5 +1,16 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 const AboutPage = () => {
+  // useDocumentTitle("About Us - Madalasa Foundation");
+  
+
   return (
+    <>
+    <SEO
+  title="About Us - Madalasa Foundation"
+  description="Madalasa Foundation works towards Education, Healthcare and Women Empowerment since 2021, ensuring basic rights reach every underprivileged community."
+  url="/about"
+/>
     <section className="bg-gray-100 py-20">
 
       <div className="max-w-7xl mx-auto px-6 space-y-20">
@@ -61,6 +72,7 @@ const AboutPage = () => {
       </div>
 
     </section>
+    </>
   );
 };
 

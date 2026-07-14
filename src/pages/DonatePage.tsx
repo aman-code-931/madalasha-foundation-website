@@ -7,8 +7,9 @@
 
 
 
-
+// import useDocumentTitle from "../hooks/useDocumentTitle";
 import { useState } from "react";
+import SEO from "../components/SEO";
 
 const PRESET_AMOUNTS = [
   { label: "₹500", value: 500 },
@@ -225,6 +226,8 @@ const styles: Record<string, React.CSSProperties> = {
 };
 
 export default function DonatePage() {
+ 
+
   const [amount, setAmount] = useState(500);
   const [customInput, setCustomInput] = useState("500");
   const [activePreset, setActivePreset] = useState(500);
@@ -294,6 +297,12 @@ export default function DonatePage() {
 
   return (
     <>
+     
+      <SEO
+        title="Donate - Madalasa Foundation"
+        description="Support Madalasa Foundations's mission in Education, Healthcare and Women Empowerment. Every contribution helps change a life."
+        url="/donate"
+      />
       <link
         href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap"
         rel="stylesheet"

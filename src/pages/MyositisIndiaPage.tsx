@@ -1,5 +1,15 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
+
 const MyositisIndiaPage: React.FC = () => {
+  // useDocumentTitle("Myositis India - Madalasa Foundation");
   return (
+    <>
+      <SEO
+        title="Myositis India - Madalasa Foundation"
+        description="Madalasa Foundation supports Myositis patients across India with awareness and medical assistance."
+        url="/myositis-india"
+      />
     <section className="bg-[#f8f9fb] py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
@@ -100,6 +110,7 @@ const MyositisIndiaPage: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

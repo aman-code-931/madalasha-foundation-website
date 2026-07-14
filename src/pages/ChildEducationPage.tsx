@@ -1,5 +1,15 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
+
 const ChildEducationPage: React.FC = () => {
+  // useDocumentTitle("Child Education - Madalasa Foundation");
   return (
+    <>
+      <SEO
+        title="Child Education - Madalasa Foundation"
+        description="Madalasa Foundation provides educational support and resources to underprivilleged children."
+        url="/child-education"
+      />
     <section className="bg-[#f8f9fb] py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
@@ -104,6 +114,7 @@ const ChildEducationPage: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

@@ -1,5 +1,15 @@
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
+
 const WomenEmpowermentPage: React.FC = () => {
+  // useDocumentTitle("Women Empowerment - Madalasa Foundation");
   return (
+    <>
+      <SEO
+        title="Women Empowerment - Madalasa Foundation"
+        description="Madalasa Foundation empowers woment through skill development, awareness and coummunity support programs."
+        url="/women - empowerment"
+      />
     <section className="bg-[#f8f9fb] py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-6">
 
@@ -97,6 +107,7 @@ const WomenEmpowermentPage: React.FC = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

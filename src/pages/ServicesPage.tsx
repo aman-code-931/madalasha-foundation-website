@@ -1,4 +1,6 @@
 import ServiceCard from "../components/ServiceCard";
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 
 const data = [
     {
@@ -67,7 +69,14 @@ const data = [
 ];
 
 const ServicesPage = () => {
+  // useDocumentTitle("Our Activities - Madalasa Foundation");
   return (
+        <>
+      <SEO
+        title="Our Activities - Madalasa Foundation"
+        description="Explore free health camps and coummunity initiatives organized by Madalasa Foundation across Gurugram."
+        url="/services"
+      />
     <section className="py-16 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -83,6 +92,7 @@ const ServicesPage = () => {
 
       </div>
     </section>
+    </>
   );
 };
 

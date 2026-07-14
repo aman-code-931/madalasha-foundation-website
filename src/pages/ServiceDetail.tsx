@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { CalendarDays, MapPin, Heart, CheckCircle2, Tag } from "lucide-react";
+// import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 
 const servicesData = [
   {
@@ -255,7 +257,8 @@ const servicesData = [
 
 const ServiceDetail = () => {
   const { id } = useParams();
-  const service = servicesData.find((item) => item.id === Number(id));
+  const service = servicesData.find((item)  => item.id === Number(id));
+
   useEffect(() => {
   window.scrollTo({
     top: 0,
@@ -266,6 +269,14 @@ const ServiceDetail = () => {
   if (!service) return <div className="p-10 text-center text-gray-500">Service not found.</div>;
 
   return (
+    <>
+      <SEO
+        title={`${service.title} - Madalasa Foundation`}
+        description={service.description}
+        image={service.image}
+        url={`/service/${service.id}`}
+      />
+
     <section className="bg-gray-50 min-h-screen pb-16">
 
 
@@ -391,6 +402,7 @@ const ServiceDetail = () => {
 
       </div>
     </section>
+    </>
   );
 };
 
